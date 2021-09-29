@@ -4,12 +4,11 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script  src="js/index.js"></script>
 <div class="container">
   <header class="header">
-    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
-    <p id="description" class="description text-center">
-      Thank you for taking the time to help us improve the platform
-    </p>
+    <h1 id="title" class="text-center">Microverse Sample Project Survey</h1>
   </header>
   <form id="survey-form">
     <div class="form-group">
@@ -19,7 +18,7 @@
         name="name"
         id="name"
         class="form-control"
-        placeholder="Enter your name"
+        placeholder="name"
         required
       />
     </div>
@@ -30,7 +29,7 @@
         name="email"
         id="email"
         class="form-control"
-        placeholder="Enter your Email"
+        placeholder="Email"
         required
       />
     </div>
@@ -49,19 +48,17 @@
       />
     </div>
     <div class="form-group">
-      <p>Which option best describes your current role?</p>
+      <p>What is your current role?</p>
       <select id="dropdown" name="role" class="form-control" required>
-        <option disabled selected value>Select current role</option>
         <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="preferNo">Prefer not to say</option>
+        <option value="job">Worker</option>
+        <!-- <option value="preferNo">Prefer not to say</option> -->
         <option value="other">Other</option>
       </select>
     </div>
 
     <div class="form-group">
-      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <p>Love for Microverse?</p>
       <label>
         <input
           name="user-recommend"
@@ -69,7 +66,7 @@
           type="radio"
           class="input-radio"
           checked
-        />Definitely</label
+        />High</label
       >
       <label>
         <input
@@ -77,7 +74,7 @@
           value="maybe"
           type="radio"
           class="input-radio"
-        />Maybe</label
+        />Medium</label
       >
 
       <label
@@ -86,26 +83,26 @@
           value="not-sure"
           type="radio"
           class="input-radio"
-        />Not sure</label
+        />Low</label
       >
     </div>
 
     <div class="form-group">
       <p>
-        What is your favorite feature of freeCodeCamp?
+        What do you like best about Microverse?
       </p>
       <select id="most-like" name="mostLike" class="form-control" required>
         <option disabled selected value>Select an option</option>
         <option value="challenges">Challenges</option>
         <option value="projects">Projects</option>
         <option value="community">Community</option>
-        <option value="openSource">Open Source</option>
+        <!-- <option value="openSource">Open Source</option> -->
       </select>
     </div>
 
     <div class="form-group">
       <p>
-        What would you like to see improved?
+        What do you want to improves?
         <span class="clue">(Check all that apply)</span>
       </p>
 
@@ -115,7 +112,7 @@
           value="front-end-projects"
           type="checkbox"
           class="input-checkbox"
-        />Front-end Projects</label
+        />To spread the power of optimism</label
       >
       <label>
         <input
@@ -123,7 +120,7 @@
           value="back-end-projects"
           type="checkbox"
           class="input-checkbox"
-        />Back-end Projects</label
+        />inspire healthier communities</label
       >
       <label
         ><input
@@ -131,7 +128,7 @@
           value="data-visualization"
           type="checkbox"
           class="input-checkbox"
-        />Data Visualization</label
+        />to save our home planet</label
       >
       <label
         ><input
@@ -139,7 +136,7 @@
           value="challenges"
           type="checkbox"
           class="input-checkbox"
-        />Challenges</label
+        />To create and promote great-tasting</label
       >
       <label
         ><input
@@ -147,65 +144,17 @@
           value="open-source-community"
           type="checkbox"
           class="input-checkbox"
-        />Open Source Community</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="gitter-help-rooms"
-          type="checkbox"
-          class="input-checkbox"
-        />Gitter help rooms</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="videos"
-          type="checkbox"
-          class="input-checkbox"
-        />Videos</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="city-meetups"
-          type="checkbox"
-          class="input-checkbox"
-        />City Meetups</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="wiki"
-          type="checkbox"
-          class="input-checkbox"
-        />Wiki</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="forum"
-          type="checkbox"
-          class="input-checkbox"
-        />Forum</label
-      >
-      <label
-        ><input
-          name="prefer"
-          value="additional-courses"
-          type="checkbox"
-          class="input-checkbox"
-        />Additional Courses</label
+        />Inspire Love and compassion</label
       >
     </div>
 
     <div class="form-group">
-      <p>Any comments or suggestions?</p>
+      <p>comments?</p>
       <textarea
         id="comments"
         class="input-textarea"
         name="comment"
-        placeholder="Enter your comment here..."
+        placeholder="ABC 123 ..."
       ></textarea>
     </div>
 
